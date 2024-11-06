@@ -1,0 +1,26 @@
+const sentence = "What is the most common character in this sentence";
+
+const mostCommonChar = function(sentence){
+ let obj = {}
+  let newSentence = sentence.split(' ').join('');
+  console.log(newSentence)
+   for(let letter of newSentence){
+    if(letter in obj){
+      obj[letter] += 1
+      } else {
+      obj[letter] = 1
+      }
+    }
+   console.log(obj)
+  let count = -1/0
+  let highKey
+  for(let key in obj){
+    if(obj[key] > count){
+      count = obj[key]
+      highKey = obj[key]
+    }
+   }
+  return highKey
+  }
+
+console.log(mostCommonChar(sentence));           //  "t"

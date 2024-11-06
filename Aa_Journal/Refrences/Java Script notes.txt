@@ -1,0 +1,49 @@
+﻿Array.prototype.map()
+The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+Array.prototype.filter()
+The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass
+the test implemented by the provided function.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+Array.prototype.reduce()
+The reduce() method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
+The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0).
+Perhaps the easiest-to-understand case for reduce() is to return the sum of all the elements in an array:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
+Array.prototype.forEach()
+The forEach() method executes a provided function once for each array element.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+
+Array.prototype.find()
+The find() method returns the first element in the provided array that satisfies the provided testing function.
+If no values satisfy the testing function, undefined is returned.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+
+
+String.prototype.endsWith()
+The endsWith() method determines whether a string ends with the characters of a specified string, returning true or false as appropriate.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
+
+
+
+Array order
+Array.prototype.slice ()
+The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+Mutating Array order
+Array.prototype.splice ()
+Array.prototype.unshift ()
+Array.prototype.shift ()
+The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
+
+Array.prototype.pop ()
+The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
+
+Array.prototype.push ()
+The push() method adds one or more elements to the end of an array and returns the new length of the array.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push

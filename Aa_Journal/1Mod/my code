@@ -1,0 +1,55 @@
+function dynamicRotate(num) {
+  debugger
+ if(num > 0)
+ return function(arr){
+  for(let i = 0; i < num; i++) {
+    arr.unshift(arr.pop());
+  }
+}
+if(num < 0){
+return function(arr){
+  for(let i = 0; i < -(num); i++) {
+    arr.push(arr.shift());
+  }
+ }
+}
+ console.log(arr)
+return arr
+}
+
+
+function morseCode(code) {
+    if(code.length){
+      // console.log(code[0])
+   if(code[0] === 'dot'){ console.log('dot')
+       setTimeout(() =>{morseCode(code.slice(1))}, 100 )
+   }
+   if(code[0] === 'dash'){ console.log ('dash')
+        setTimeout(() =>{morseCode(code.slice(1))}, 300 )
+   }
+  }
+  }
+
+  function shortestToLongest(strings, sorted = []) {
+    let smallestVal = 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
+    smallIdx = 0
+    debugger
+    if(strings.length ){
+    for(let i = 0; i < strings.length; i ++ ){
+      debugger
+        if( strings[i].length < smallestVal.length || strings[i] < smallestVal){
+          //strings[i].length < smallestVal.length
+          smallestVal = strings[i]
+          smallIdx = strings.indexOf(strings[i])
+        }
+      }
+      sorted.push(smallestVal)
+      //let smallIdx = strings.indexOf(smallestVal)
+      strings.splice(smallIdx, 1);
+      console.log(smallestVal)
+      return shortestToLongest(strings, sorted)
+      }
+      return sorted
+    }
+
+    

@@ -1,0 +1,27 @@
+/***********************************************************************
+Write a function `removeDuplicateValues(obj)` that takes an object as
+an argument and returns an array containing all unique values from the object.
+
+Examples:
+
+const obj1 = { firstName: 'Maria', middleName: 'Rose', lastName: 'Maria'}
+console.log(removeDuplicateValues(obj1));
+// [ 'Maria', 'Rose' ]
+
+const obj2 = { quantity: 5, price: 5, ranking: 5}
+console.log(removeDuplicateValues(obj2));
+// [ 5 ]
+
+const obj3 = { item: 'apple', price: '$0.35', type: 'item' }
+console.log(removeDuplicateValues(obj3));
+// [ 'apple', '$0.35', 'item' ]
+***********************************************************************/
+
+let  removeDuplicateValues = function(obj) {
+let uniqueVal = []
+for (let val of Object.values(obj)) {
+  if (!uniqueVal.includes(val)) uniqueVal.push(val)
+}
+
+return uniqueVal
+}

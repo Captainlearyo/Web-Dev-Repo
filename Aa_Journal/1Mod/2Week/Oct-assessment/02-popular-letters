@@ -1,0 +1,37 @@
+/***********************************************************************
+Write a function `popularLetters(string)` that takes a
+string as an argument and returns an array of all of the characters that appear
+five or more times in the string.
+
+Examples:
+
+console.log(popularLetters('apple')); // []
+console.log(popularLetters('bananas in pajamas')); // [ 'a' ]
+console.log(popularLetters('Yes, we have no bananas, we have no bananas today!')); // [ 'e', ' ', 'a', 'n' ]
+***********************************************************************/
+
+function popularLetters(string) {
+
+  let obj = {};
+
+  console.log(string)
+for( let letter of string){
+ if(letter in obj) {
+   obj[letter] += 1
+ } else {
+   obj[letter] = 1
+
+ 		}
+	}
+  console.log(obj)
+
+
+   let highKeys = []
+  for(let key in obj){
+    if(obj[key] >= 5) {
+    highKeys.push(key)
+    }
+  }
+  console.log (highKeys)
+  return highKeys;
+}

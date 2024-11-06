@@ -1,0 +1,10 @@
+function dynamicIntervalCount(cb, delay, amount){
+    if(!amount) setTimeout(cb, delay);
+
+    const countIntervalObj = setInterval(() => {
+        cb();
+        amount--;
+        if (amount ===0) clearInterval(countIntervalObj)
+    },delay);
+    return countIntervalObj
+}

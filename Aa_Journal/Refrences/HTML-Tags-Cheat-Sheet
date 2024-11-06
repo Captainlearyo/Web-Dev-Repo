@@ -1,0 +1,33 @@
+<html>
+  <body>
+
+      <h2>Lists</h2>
+      <h3>Unordered Lists</h3>
+      <p>
+        Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in an `li` tag.
+      </p>
+      <h4>Types of lists:</h4>
+      <ul>
+        <li>Unordered lists (`ul`)</li>
+        <li>Ordered lists (`ol`)</li>
+      </ul>
+
+      <h3>Ordered Lists</h3>
+      <p>
+        Ordered lists are numbered and go in `ol` tags. Each list item goes in an `li` tag.
+      </p>
+      <h4>Polya's Problem Solving Framework</h4>
+      <ol>
+        <li>Understand the problem</li>
+        <li>Come up with a plan</li>
+        <li>Carry out the plan</li>
+        <li>Go back and improve your solution</li>
+      </ol>
+      <p>
+        Anchor tags create links to other pages. The URL goes in the `href` attribute.
+        <a href="https://duckduckgo.com">
+          Go to DuckDuckGo to search for more information.
+        </a>
+      </p>
+  </body>
+</html>
